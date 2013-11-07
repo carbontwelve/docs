@@ -513,7 +513,7 @@ Eloquent allows you to access your relations via dynamic properties. Eloquent wi
 	}
 
 	$phone = Phone::find(1);
-	
+
 Instead of echoing the user's email like this:
 
 	echo $phone->user()->first()->email;
@@ -737,10 +737,10 @@ Eloquent collections also contain a few helpful methods for looping and filterin
 **Applying A Callback To Each Collection Object**
 
 	$roles = User::find(1)->roles;
-	
+
 	$roles->each(function($role)
 	{
-		//	
+		//
 	});
 
 **Sorting A Collection By A Value**
